@@ -13,7 +13,9 @@ var user = new SteamUser(null, userOptions);
 user.logOn(); // Log onto Steam anonymously
 
 var app = new Express();
-app.listen(PORT, IP);
+app.listen(PORT, IP, () => {
+	console.log(`listening on port ${PORT}`);
+});
 
 app.use(cors);
 app.use(checkLogOn);

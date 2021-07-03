@@ -4,7 +4,7 @@
 	"description": "Provides an HTTP API to Steam's product information control system",
 	"main": "app.js",
 	"scripts": {
-		"start": "forever app.js"
+		"start": "node app.js"
 	},
 	"author": "Dr. McKay",
 	"license": "MIT",
@@ -13,7 +13,7 @@
 		"url": "https://github.com/DoctorMcKay/steam-pics-api.git"
 	},
 	"dependencies": {
-		"steam-user": "^4.19.4",
-		"express": "^4.17.1"
+		"express": "^4.17.1",
+		"steam-user": "^4.19.10"
 	}
 }
